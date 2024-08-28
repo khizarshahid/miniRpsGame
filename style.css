@@ -5,7 +5,7 @@ body{
     flex-direction: column;
     align-items: center;
     font-weight: bold;
-    background-color: rgba(255, 255, 0, 0.165);
+    background-color: rgba(255, 255, 0, 0.339);
     
 }
 h1{
@@ -80,12 +80,14 @@ h1{
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 620px) {
     
     h1 {
         font-size: 1.5rem;
     }
     .choices button {
+        display: grid;
+        margin: 20px;
         font-size: 3rem;
     }
     #resultDisplay {
@@ -93,5 +95,9 @@ h1{
     }
     .scoreDisplay {
         font-size: 1.2rem;
+    }
+    #playerDisplay ,#computerDisplay{
+        display: grid;
+        font-size: 1rem;
     }
 }
